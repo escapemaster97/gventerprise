@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GV Enterprise</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/background.JPG'); /* Update this path if necessary */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .banner {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 2px solid #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            margin: 20px;
+            animation: fadeIn 2s;
+        }
+        .banner img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .banner h1 {
+            font-size: 3em;
+            margin: 0 0 20px;
+            color: #007BFF;
+        }
+        .banner p {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .equipment-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .equipment-list h2 {
+            font-size: 2em;
+            color: #007BFF;
+        }
+        .equipment-list ul {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            .banner {
+                padding: 30px;
+            }
+            .banner h1 {
+                font-size: 2.5em;
+            }
+            .banner p {
+                font-size: 1.2em;
+            }
+            .equipment-list h2 {
+                font-size: 1.8em;
+            }
+            .equipment-list ul {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            .banner {
+                padding: 20px;
+            }
+            .banner h1 {
+                font-size: 2em;
+            }
+            .banner p {
+                font-size: 1em;
+            }
+            .equipment-list h2 {
+                font-size: 1.5em;
+            }
+            .equipment-list ul {
+                font-size: 0.9em;
+            }
+            .button {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="/logo.png" alt="GV Enterprise Logo"> <!-- Add your logo here -->
+        <h1>Hi Welcome to GV Enterprise!</h1>
+        <p>We're on the verge of something amazing. Get ready for unparalleled technical expertise to elevate your business to new heights. Our team of experts is dedicated to bringing you the best solutions in the tech world. Stay tuned and be prepared for the launch of a lifetime!</p>
+        <button class="button" onclick="triggerConfetti()">Celebrate with Us!</button>
+
+        <div class="equipment-list">
+            <h2>Critical Care Medical Devices & Equipment</h2>
+            <ul>
+                <li>Ventilators</li>
+                <li>Infusion Pumps</li>
+                <li>Patient Monitors</li>
+                <li>Defibrillators</li>
+                <li>ECG Machines</li>
+                <li>Suction Machines</li>
+                <li>Pulse Oximeters</li>
+                <li>Medical Gas Supply Systems</li>
+                <li>Blood Gas Analyzers</li>
+                <li>Anesthesia Machines</li>
+                <li>Hemodialysis Machines</li>
+                <li>IV Poles and Stands</li>
+                <li>Therapeutic Hypothermia Devices</li>
+                <li>Electric Hospital Beds</li>
+                <li>Negative Pressure Wound Therapy Devices</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function triggerConfetti() {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
+    </script>
+</body>
+</html>
