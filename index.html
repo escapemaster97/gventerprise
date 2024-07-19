@@ -14,7 +14,7 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-image: url('/background.JPG'); /* Update this path if necessary */
+            background-image: url('/background.JPG'); /* Default background image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -73,6 +73,9 @@
             to { opacity: 1; }
         }
         @media (max-width: 768px) {
+            body {
+                background-image: url('/background-mobile.JPG'); /* Background image for tablets */
+            }
             .banner {
                 padding: 30px;
             }
@@ -90,6 +93,9 @@
             }
         }
         @media (max-width: 480px) {
+            body {
+                background-image: url('/image.jpg'); /* Background image for mobile phones */
+            }
             .banner {
                 padding: 20px;
             }
